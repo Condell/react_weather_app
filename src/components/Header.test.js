@@ -1,18 +1,18 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import Home from "./Home";
+import Header from "./Header";
 
-describe("Home", () => {
+describe("Header", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Home />);
+    wrapper = shallow(<Header />);
   });
 
-  it("should contain an h1 with the text 'Enter a City and State'", () => {
+  it("should contain an h1 with the text 'Weather App'", () => {
     expect(wrapper.dive().children().at(0).dive().text()).toEqual(
-      "Enter a City and State"
+      "Weather App"
     );
   });
   it("should contain an input element", () => {
@@ -26,6 +26,7 @@ describe("Home", () => {
         .dive()
         .children()
         .at(2)
+        .dive()
         .dive()
         .containsMatchingElement(<button>Get Weather</button>)
     ).toEqual(true);
