@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import Home from './Home'
-
-
-
-
+import Home from "./Home";
+import Header from "./Header";
 
 class App extends Component {
   render() {
-    return (  
-        <Home /> 
+    return (
+      <div>
+        <Header />
+        <Home />
+      </div>
     );
   }
 }

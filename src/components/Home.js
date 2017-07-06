@@ -2,16 +2,19 @@ import React from "react";
 import styled from "styled-components";
 
 import pattern from "../images/pattern.svg";
+import Input from "./shared/Input";
+import Button from "./shared/Button";
 
-const Home = styled.div`
+const HomeWrapper = styled.div`
   background-image: url(${pattern});
   background-size: 100% 100%;
   background-color: #fe9c42;
-  min-height: 95vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0px;
 `;
 
 const Title = styled.h1`
@@ -19,23 +22,11 @@ const Title = styled.h1`
   color: white;
 `;
 
-const Input = styled.input`
-    background-color: white;
-    border-radius: 5px;
-    margin: 1em;
-    padding: .5em;
-`;
-
-const Button = styled.button`
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    padding: .5em 2em;
-`;
-
-export default () =>
-  <Home>
+const Home = () =>
+  <HomeWrapper>
     <Title>Enter a City and State</Title>
-    <Input type='text' placeholder="St. George, Utah"/>
+    <Input type="text" placeholder="St. George, Utah" />
     <Button>Get Weather</Button>
-  </Home>;
+  </HomeWrapper>;
+
+export default Home;
