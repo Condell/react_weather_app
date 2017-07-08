@@ -1,16 +1,16 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import Home from "./Home";
+import WeatherForm from "./WeatherForm";
 
-describe("Home", () => {
+describe("WeatherForm", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Home />);
+    wrapper = shallow(<WeatherForm />);
   });
 
-  it("should exist", () => {
+  it("should render", () => {
     expect(wrapper.find("div").first().exists()).toBe(true);
   });
 });

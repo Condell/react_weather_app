@@ -8,6 +8,6 @@ import App from "./App";
 describe("App", () => {
   it("App should exist", () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find('div').exists()).toEqual(true);
+    expect(wrapper.find("div").exists()).toEqual(true);
   });
 });

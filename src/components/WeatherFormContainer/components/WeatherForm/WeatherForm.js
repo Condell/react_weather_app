@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import Button from "./components/Button";
-import Input from "./components/Input";
+import Button from "./components/Button/Button";
+import Input from "./components/Input/Input";
 
 const Form = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const Form = styled.div`
   align-content: center;
 `;
 
-const WeatherForm = (props) =>
+const WeatherForm = props =>
   <Form>
     <Input
       type="text"
