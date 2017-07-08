@@ -6,19 +6,18 @@ import Title from '../Title/Title'
 
 const HeaderWrapper = styled.div`
   background-color: #f8642e;
-  height: 15vh;
+  min-height: 20vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-flow: column;
   align-items: center;
-  align-content: center;
+  justify-content: space-around;
 `;
 
 
 const Header = () =>
   <HeaderWrapper>
     <Title>Weather App</Title>
-    <WeatherFormContainer />
+    <WeatherFormContainer row />
   </HeaderWrapper>;
 
 export default Header;

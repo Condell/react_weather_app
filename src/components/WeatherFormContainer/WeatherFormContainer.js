@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import WeatherForm from './components/WeatherForm/WeatherForm'
 
-class WeatherContainer extends Component {
+class WeatherFormContainer extends Component {
   state = { text: "" };
 
   handleChange = e => {
@@ -11,11 +11,11 @@ class WeatherContainer extends Component {
 
   render() {
     return (
-      <WeatherForm onChange={this.handleChange}/>
+      <WeatherForm onChange={this.handleChange} {...this.props}/>
     );
   }
 }
 
 
 
-export default WeatherContainer;
+export default WeatherFormContainer;

@@ -6,15 +6,14 @@ import Input from "./components/Input/Input";
 
 const Form = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-flow: ${props => props.row ? 'row' : 'column'};
   align-items: center;
-  align-content: center;
+  justify-content: space-around;
+  flex: none;
 `;
 
 const WeatherForm = props =>
-  <Form>
+  <Form {...props}>
     <Input
       type="text"
       size={15}
