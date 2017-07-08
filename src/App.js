@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 
-import Home from "./Home";
-import Header from "./Header";
+import Home from "./scenes/Home/Home";
+import Header from "./components/Header/Header";
 
 class App extends Component {
   render() {

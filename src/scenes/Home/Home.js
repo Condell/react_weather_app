@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-import pattern from "../images/pattern.svg";
-import Input from "./shared/Input";
-import Button from "./shared/Button";
+import pattern from "./images/pattern.svg";
+import WeatherContainer from '../../components/WeatherFormContainer/WeatherFormContainer';
+import Title from '../../components/Title/Title'
 
 const HomeWrapper = styled.div`
   background-image: url(${pattern});
   background-size: 100% 100%;
   background-color: #fe9c42;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,16 +17,10 @@ const HomeWrapper = styled.div`
   margin-top: 0px;
 `;
 
-const Title = styled.h1`
-  font-family: 'Abel', sans-serif;
-  color: white;
-`;
-
 const Home = () =>
   <HomeWrapper>
     <Title>Enter a City and State</Title>
-    <Input type="text" placeholder="St. George, Utah" />
-    <Button>Get Weather</Button>
+    <WeatherContainer/>
   </HomeWrapper>;
 
 export default Home;

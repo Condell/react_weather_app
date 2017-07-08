@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import sanitize from 'sanitize.css';
 
-import App from './components/App';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
