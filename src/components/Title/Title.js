@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from 'prop-types';
 
 const Title = styled.h1`
   font-family: 'Abel', sans-serif;
@@ -7,5 +8,9 @@ const Title = styled.h1`
   margin-bottom: .5em;
   flex: none;
 `;
+
+Title.propTypes = {
+  children: PropTypes.string,
+}
 
 export default Title;

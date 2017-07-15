@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from 'prop-types';
 
 const Button = styled.button`
   background-color: #4caf50;
@@ -7,5 +8,9 @@ const Button = styled.button`
   padding: .5em;
   margin: .5em;
 `;
+
+Button.propTypes = {
+  children: PropTypes.string,
+}
 
 export default Button;

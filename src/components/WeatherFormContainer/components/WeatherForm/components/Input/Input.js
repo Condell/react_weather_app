@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import React from 'react'
+import React from "react";
+import PropTypes from 'prop-types';
 
 const Input = styled.input`
   background-color: white;
@@ -7,5 +8,12 @@ const Input = styled.input`
   padding: .5em;
   margin: .5em;
 `;
+
+Input.propTypes = {
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
+  size: PropTypes.number,
+  type: PropTypes.string,
+}
 
 export default Input;

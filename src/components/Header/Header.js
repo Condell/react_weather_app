@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import WeatherFormContainer from "../WeatherFormContainer/WeatherFormContainer";
-import Title from '../Title/Title'
+import Title from "../Title/Title";
 
 const HeaderWrapper = styled.div`
   background-color: #f8642e;
@@ -12,7 +12,6 @@ const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
-
 
 const Header = () =>
   <HeaderWrapper>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 
-import WeatherForm from './components/WeatherForm/WeatherForm'
+import WeatherForm from "./components/WeatherForm/WeatherForm";
 
 class WeatherFormContainer extends Component {
   state = { text: "" };
@@ -10,12 +11,12 @@ class WeatherFormContainer extends Component {
   };
 
   render() {
-    return (
-      <WeatherForm onChange={this.handleChange} {...this.props}/>
-    );
+    return <WeatherForm onChange={this.handleChange} {...this.props} />;
   }
 }
 
-
+WeatherFormContainer.propTypes = {
+  row: PropTypes.bool,
+}
 
 export default WeatherFormContainer;
