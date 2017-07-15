@@ -6,18 +6,14 @@ const fetchCurrentWeather = city => {
   const encodedURI = window.encodeURI(
     `http://api.openweathermap.org/data/2.5/weather?q=${city},US&type=accurate&APPID=${_APIKEY}`
   );
-  axios.get(encodedURI).then(response => {
-    console.log(response);
-  });
+  return axios.get(encodedURI).then(response => response);
 };
 
 const fetch5DayForecast = city => {
   const encodedURI = window.encodeURI(
     `http://api.openweathermap.org/data/2.5/forecast/daily?q=${city},US&type=accurate&APPID=${_APIKEY}&cnt=5`
   );
-  axios.get(encodedURI).then(response => {
-    console.log(response);
-  });
+  return axios.get(encodedURI).then(response => response);
 };
 
-export default { fetchCurrentWeather, fetch5DayForecast };
+export { fetchCurrentWeather, fetch5DayForecast };
