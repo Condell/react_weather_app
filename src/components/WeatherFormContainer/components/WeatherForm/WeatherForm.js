@@ -27,7 +27,7 @@ const WeatherForm = props =>
       value={props.text}
       onChange={props.onChange}
     />
-    <Button>Get Weather</Button>
+    <Button onClick={props.onSubmit}>Get Weather</Button>
   </Form>;
 
 export default WeatherForm;
