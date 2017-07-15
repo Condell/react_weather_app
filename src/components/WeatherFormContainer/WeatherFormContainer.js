@@ -20,6 +20,7 @@ class WeatherFormContainer extends Component {
       <WeatherForm
         onChange={this.handleChange}
         onSubmit={this.handleSubmit}
+        text={this.state.text}
         {...this.props}
       />
     );

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 import Button from "./components/Button/Button";
 import Input from "./components/Input/Input";
@@ -15,8 +16,8 @@ const Form = styled.div`
 
 Form.propTypes = {
   onChange: PropTypes.func,
-  children: PropTypes.array,
-}
+  children: PropTypes.array
+};
 
 const WeatherForm = props =>
   <Form {...props}>
@@ -27,7 +28,9 @@ const WeatherForm = props =>
       value={props.text}
       onChange={props.onChange}
     />
-    <Button onClick={props.onSubmit}>Get Weather</Button>
+    <Link to={`/forecast/city=${props.text}`}>
+      <Button>Get Weather</Button>
+    </Link>
   </Form>;
 
 export default WeatherForm;
