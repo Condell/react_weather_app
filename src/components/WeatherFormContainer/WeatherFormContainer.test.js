@@ -1,7 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
+import 'jest-styled-components'
+import toJson from "enzyme-to-json"
 
 import WeatherFormContainer from "./WeatherFormContainer";
+
+jest.mock("./WeatherFormContainer.js", () => "WeatherFormContainer")
 
 describe("WeatherFormContainer", () => {
   let wrapper;
@@ -11,6 +15,6 @@ describe("WeatherFormContainer", () => {
   });
 
   it("should render", () => {
-    expect(wrapper.find("div").first().exists()).toBe(true);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

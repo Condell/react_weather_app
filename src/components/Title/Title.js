@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Title = styled.h1`
   font-family: 'Abel', sans-serif;
-  color: white;
+  color: ${props => props.whiteFont ? "white" : "black"};
   margin-top: 0px;
   margin-bottom: .5em;
   flex: none;

@@ -1,7 +1,10 @@
 import styled from "styled-components";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const Button = styled.button`
+const Button = styled(Link)`
+  font-family: "Arial";
+  text-decoration: none;
   background-color: #4caf50;
   color: white;
   border-radius: 5px;
@@ -9,8 +12,5 @@ const Button = styled.button`
   margin: .5em;
 `;
 
-Button.propTypes = {
-  children: PropTypes.string,
-}
 
 export default Button;

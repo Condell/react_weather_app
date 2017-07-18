@@ -3,15 +3,15 @@ import { shallow } from "enzyme";
 import 'jest-styled-components'
 import toJson from "enzyme-to-json"
 
-import Header from "./Header";
+import Forecast from "./Forecast";
 
-jest.mock("./Header.js", () => "Header")
+jest.mock("./Forecast.js", () => "Forecast")
 
-describe("Header", () => {
+describe("Forecast", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Header />);
+    wrapper = shallow(<Forecast />);
   });
 
   it("should render", () => {

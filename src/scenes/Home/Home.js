@@ -19,7 +19,7 @@ const HomeWrapper = styled.div`
 
 const Home = () =>
   <HomeWrapper>
-    <Title>Enter a City and State</Title>
+    <Title whiteFont>Enter a City and State</Title>
     <WeatherContainer />
   </HomeWrapper>;
 

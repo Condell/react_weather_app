@@ -28,14 +28,15 @@ const WeatherForm = props =>
       value={props.text}
       onChange={props.onChange}
     />
-    <Link
+
+    <Button
       to={{
         pathname: "/forecast",
         search: `city=${props.text}`
       }}
     >
-      <Button>Get Weather</Button>
-    </Link>
+      Get Weather
+    </Button>
   </Form>;
 
 export default WeatherForm;

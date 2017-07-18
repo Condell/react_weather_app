@@ -15,7 +15,7 @@ const HeaderWrapper = styled.div`
 
 const Header = () =>
   <HeaderWrapper>
-    <Title>Weather App</Title>
+    <Title whiteFont>Weather App</Title>
     <WeatherFormContainer row />
   </HeaderWrapper>;
 

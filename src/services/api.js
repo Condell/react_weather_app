@@ -13,7 +13,7 @@ const fetch5DayForecast = city => {
   const encodedURI = window.encodeURI(
     `http://api.openweathermap.org/data/2.5/forecast/daily?q=${city},US&type=accurate&APPID=${_APIKEY}&cnt=5`
   );
-  return axios.get(encodedURI).then(response => response);
+  return axios.get(encodedURI).then(response => response.data);
 };
 
 export { fetchCurrentWeather, fetch5DayForecast };

@@ -1,7 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
+import 'jest-styled-components'
+import toJson from "enzyme-to-json"
 
 import Title from "./Title";
+
+jest.mock("./Title.js", () => "Title")
 
 describe("Title", () => {
   let wrapper;
@@ -11,6 +15,6 @@ describe("Title", () => {
   });
 
   it("should render", () => {
-    expect(wrapper.find("h1").first().exists()).toBe(true);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
