@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input should render 1`] = `<Input />`;
+exports[`Input should render 1`] = `
+.ijtFOJ {
+  background-color: white;
+  border-radius: 5px;
+  padding: .5em;
+  margin: .5em;
+}
+
+<input
+  className="sc-bdVaJa ijtFOJ"
+/>
+`;

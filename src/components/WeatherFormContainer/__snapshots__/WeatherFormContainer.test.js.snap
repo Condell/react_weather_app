@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WeatherFormContainer should render 1`] = `<WeatherFormContainer />`;
+exports[`WeatherFormContainer should render 1`] = `
+<WeatherForm
+  onChange={[Function]}
+  text=""
+/>
+`;

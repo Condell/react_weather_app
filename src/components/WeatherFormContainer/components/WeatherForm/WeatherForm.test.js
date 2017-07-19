@@ -5,7 +5,6 @@ import toJson from "enzyme-to-json"
 
 import WeatherForm from "./WeatherForm";
 
-jest.mock("./WeatherForm.js", () => "WeatherForm")
 
 describe("WeatherForm", () => {
   let wrapper;

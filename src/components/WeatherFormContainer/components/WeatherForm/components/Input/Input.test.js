@@ -5,8 +5,6 @@ import toJson from "enzyme-to-json"
 
 import Input from "./Input";
 
-jest.mock("./Input.js", () => "Input")
-
 describe("Input", () => {
   let wrapper;
 

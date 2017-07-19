@@ -1,3 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WeatherForm should render 1`] = `<WeatherForm />`;
+exports[`WeatherForm should render 1`] = `
+<styled.div>
+  <styled.input
+    placeholder="St. George, Utah"
+    size={15}
+    type="text"
+  />
+  <Styled(Link)
+    to={
+      Object {
+        "pathname": "/forecast",
+        "search": "city=undefined",
+      }
+    }
+  >
+    Get Weather
+  </Styled(Link)>
+</styled.div>
+`;

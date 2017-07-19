@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -12,5 +13,12 @@ const Button = styled(Link)`
   margin: .5em;
 `;
 
+Button.propTypes = {
+  to: PropTypes.object
+}
+
+Button.defaultProps = {
+  to: {}
+}
 
 export default Button;

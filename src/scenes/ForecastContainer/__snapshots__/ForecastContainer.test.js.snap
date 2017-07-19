@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ForecastContainer should render 1`] = `<ForecastContainer />`;
+exports[`ForecastContainer should render 1`] = `
+<Forecast
+  isLoading={true}
+  weatherData={Object {}}
+/>
+`;

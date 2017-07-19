@@ -5,7 +5,6 @@ import toJson from "enzyme-to-json"
 
 import Header from "./Header";
 
-jest.mock("./Header.js", () => "Header")
 
 describe("Header", () => {
   let wrapper;

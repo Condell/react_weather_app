@@ -18,8 +18,9 @@ const Forecast = props =>
   </ForecastWrapper>;
 
 Forecast.propTypes = {
-  city: PropTypes.string
+  weatherData: PropTypes.object
 };
+
 
 
 export default Forecast;

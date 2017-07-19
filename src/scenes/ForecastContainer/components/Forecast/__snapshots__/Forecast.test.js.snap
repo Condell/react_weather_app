@@ -1,3 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Forecast should render 1`] = `<Forecast />`;
+exports[`Forecast Forecast Loading should render 1`] = `
+<styled.div
+  isLoading={true}
+>
+  <h1>
+    Loading...
+  </h1>
+</styled.div>
+`;
+
+exports[`Forecast Forecast has loaded should render 1`] = `
+<styled.div
+  isLoading={false}
+  weatherData={
+    Object {
+      "city": Object {
+        "name": "New York",
+      },
+    }
+  }
+>
+  <DaysList
+    data={
+      Object {
+        "city": Object {
+          "name": "New York",
+        },
+      }
+    }
+    name="New York"
+  />
+</styled.div>
+`;

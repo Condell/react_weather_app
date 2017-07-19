@@ -5,8 +5,6 @@ import toJson from "enzyme-to-json"
 
 import ForecastContainer from "./ForecastContainer";
 
-jest.mock("./ForecastContainer.js", () => "ForecastContainer")
-
 describe("ForecastContainer", () => {
   let wrapper;
 

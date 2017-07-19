@@ -1,20 +1,32 @@
 import React from "react";
 import { shallow } from "enzyme";
-import 'jest-styled-components'
-import toJson from "enzyme-to-json"
+import "jest-styled-components";
+import toJson from "enzyme-to-json";
 
 import Forecast from "./Forecast";
 
-jest.mock("./Forecast.js", () => "Forecast")
-
 describe("Forecast", () => {
-  let wrapper;
+  describe("Forecast Loading", () => {
+    let wrapper;
 
-  beforeEach(() => {
-    wrapper = shallow(<Forecast />);
+    beforeEach(() => {
+      wrapper = shallow(<Forecast isLoading={true} />);
+    });
+
+    it("should render", () => {
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
   });
+  describe("Forecast has loaded", () => {
+    let wrapper;
+    const weatherData = {city: {name: "New York" }}
 
-  it("should render", () => {
-    expect(toJson(wrapper)).toMatchSnapshot();
+    beforeEach(() => {
+      wrapper = shallow(<Forecast isLoading={false} weatherData={weatherData} />);
+    });
+
+    it("should render", () => {
+      expect(toJson(wrapper)).toMatchSnapshot();
+    });
   });
 });

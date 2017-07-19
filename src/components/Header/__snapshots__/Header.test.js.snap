@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header should render 1`] = `<Header />`;
+exports[`Header should render 1`] = `
+<styled.div>
+  <styled.h1
+    whiteFont={true}
+  >
+    Weather App
+  </styled.h1>
+  <WeatherFormContainer
+    row={true}
+  />
+</styled.div>
+`;

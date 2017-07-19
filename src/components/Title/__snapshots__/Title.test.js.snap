@@ -1,3 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Title should render 1`] = `<Title />`;
+exports[`Title should render 1`] = `
+.fUbstB {
+  font-family: 'Abel', sans-serif;
+  color: black;
+  margin-top: 0px;
+  margin-bottom: .5em;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+<h1
+  className="sc-bdVaJa fUbstB"
+/>
+`;
