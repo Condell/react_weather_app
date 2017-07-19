@@ -2,6 +2,7 @@
 
 exports[`ForecastContainer should render 1`] = `
 <Forecast
+  handleClick={[Function]}
   isLoading={true}
   weatherData={Object {}}
 />

@@ -12,6 +12,13 @@ class ForecastContainer extends Component {
     loading: true
   };
 
+  handleClick = (day, name) => {
+      this.props.history.push({
+      pathname: `/detail/${name}`,
+      state: day
+    });
+  }
+
   componentDidMount() {
     this.city = queryString.parse(this.props.location.search).city;
     fetch5DayForecast(this.city).then(res => {
@@ -41,6 +48,7 @@ class ForecastContainer extends Component {
         isLoading={this.state.loading}
         weatherData={this.state.weatherData}
         city={this.city}
+        handleClick={this.handleClick}
       />
     );
   }

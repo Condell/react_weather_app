@@ -13,9 +13,20 @@ const DaysListWrapper = styled.div`
 
 const DaysList = props =>
   <DaysListWrapper {...props}>
-    <h2>5-day Forecast for {props.name}</h2>
+    <h2>
+      5-day Forecast for {props.name}
+    </h2>
     {props.data.list.map((day, index) => {
-      return <Day key={index} unixTime={day.dt} weatherIcon={day.weather[0].icon} />;
+      return (
+        <Day
+          key={index}
+          unixTime={day.dt}
+          weatherIcon={day.weather[0].icon}
+          thisDay={day}
+          name={props.name}
+          handleClick={props.handleClick}
+        />
+      );
     })}
   </DaysListWrapper>;
 

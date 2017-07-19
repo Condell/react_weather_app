@@ -14,13 +14,12 @@ const Forecast = props =>
       : <DaysList
           name={props.weatherData.city.name}
           data={props.weatherData}
+          handleClick={props.handleClick}
         />}
   </ForecastWrapper>;
 
 Forecast.propTypes = {
   weatherData: PropTypes.object
 };
-
-
 
 export default Forecast;
