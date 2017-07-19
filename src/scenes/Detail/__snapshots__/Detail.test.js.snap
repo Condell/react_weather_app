@@ -1,9 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Detail should render 1`] = `
-<styled.div>
-  <h1>
-    DETAILS
-  </h1>
-</styled.div>
-`;
+exports[`Detail should render 1`] = `<Detail />`;

@@ -5,17 +5,23 @@ import PropTypes from "prop-types";
 import DaysList from "./components/DaysList/DaysList";
 import Title from "../../../../components/Title/Title";
 
-const ForecastWrapper = styled.div`background-color: white;`;
+const ForecastWrapper = styled.div`
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+`;
 
 const Forecast = props =>
   <ForecastWrapper {...props}>
     {props.isLoading === true
-      ? <h1>Loading...</h1>
-      : <DaysList
-          name={props.weatherData.city.name}
-          data={props.weatherData}
-          handleClick={props.handleClick}
-        />}
+      ? <Title>Loading...</Title>
+      : <div>
+          <Title>
+            5-day Forecast for {props.weatherData.city.name}:
+          </Title>
+          <DaysList data={props.weatherData} handleClick={props.handleClick} name={props.weatherData.city.name} />
+        </div>}
   </ForecastWrapper>;
 
 Forecast.propTypes = {

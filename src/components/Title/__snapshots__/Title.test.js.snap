@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Title should render 1`] = `
-.fUbstB {
+.bAIFrC {
   font-family: 'Abel', sans-serif;
   color: black;
   margin-top: 0px;
@@ -9,9 +9,12 @@ exports[`Title should render 1`] = `
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 <h1
-  className="sc-bdVaJa fUbstB"
+  className="sc-bdVaJa bAIFrC"
 />
 `;

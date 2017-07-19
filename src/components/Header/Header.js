@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import WeatherFormContainer from "../WeatherFormContainer/WeatherFormContainer";
 import Title from "../Title/Title";
@@ -11,11 +12,19 @@ const HeaderWrapper = styled.div`
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
+
+  > a {
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    flex-flow: row;
+  }
 `;
 
 const Header = () =>
   <HeaderWrapper>
-    <Title whiteFont>Weather App</Title>
+    <Link to={"/"}><Title whiteFont>Weather App</Title></Link>
     <WeatherFormContainer row />
   </HeaderWrapper>;
 

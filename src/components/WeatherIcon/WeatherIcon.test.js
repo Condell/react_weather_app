@@ -3,15 +3,14 @@ import { shallow } from "enzyme";
 import 'jest-styled-components'
 import toJson from "enzyme-to-json"
 
-import Detail from "./Detail";
+import WeatherIcon from "./WeatherIcon";
 
-jest.mock("./Detail.js", () => "Detail")
 
-describe("Detail", () => {
+describe("WeatherIcon", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Detail />);
+    wrapper = shallow(<WeatherIcon />);
   });
 
   it("should render", () => {

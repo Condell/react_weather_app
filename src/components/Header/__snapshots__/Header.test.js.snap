@@ -2,11 +2,16 @@
 
 exports[`Header should render 1`] = `
 <styled.div>
-  <styled.h1
-    whiteFont={true}
+  <Link
+    replace={false}
+    to="/"
   >
-    Weather App
-  </styled.h1>
+    <styled.h1
+      whiteFont={true}
+    >
+      Weather App
+    </styled.h1>
+  </Link>
   <WeatherFormContainer
     row={true}
   />

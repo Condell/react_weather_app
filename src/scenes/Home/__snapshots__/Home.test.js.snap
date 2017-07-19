@@ -5,7 +5,7 @@ exports[`Home should render 1`] = `
   <styled.h1
     whiteFont={true}
   >
-    Enter a City and State
+    Enter a City and State, or a ZIP Code
   </styled.h1>
   <WeatherFormContainer />
 </styled.div>

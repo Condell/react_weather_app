@@ -4,9 +4,9 @@ exports[`Forecast Forecast Loading should render 1`] = `
 <styled.div
   isLoading={true}
 >
-  <h1>
+  <styled.h1>
     Loading...
-  </h1>
+  </styled.h1>
 </styled.div>
 `;
 
@@ -21,15 +21,22 @@ exports[`Forecast Forecast has loaded should render 1`] = `
     }
   }
 >
-  <DaysList
-    data={
-      Object {
-        "city": Object {
-          "name": "New York",
-        },
+  <div>
+    <styled.h1>
+      5-day Forecast for 
+      New York
+      :
+    </styled.h1>
+    <DaysList
+      data={
+        Object {
+          "city": Object {
+            "name": "New York",
+          },
+        }
       }
-    }
-    name="New York"
-  />
+      name="New York"
+    />
+  </div>
 </styled.div>
 `;

@@ -12,10 +12,10 @@ class ForecastContainer extends Component {
     loading: true
   };
 
-  handleClick = (day, name) => {
+  handleClick = (day, name, date) => {
       this.props.history.push({
       pathname: `/detail/${name}`,
-      state: day
+      state: Object.assign({}, day, {date})
     });
   }
 

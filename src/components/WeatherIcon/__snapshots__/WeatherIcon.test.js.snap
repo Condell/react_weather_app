@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherIcon should render 1`] = `
+.hYPZWU {
+  min-height: ;
+}
+
+@media (min-width: 768px) {
+  .hYPZWU {
+    min-height: 100px;
+  }
+}
+
+<img
+  className="sc-bdVaJa hYPZWU"
+/>
+`;

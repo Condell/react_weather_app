@@ -7,10 +7,8 @@ const Title = styled.h1`
   margin-top: 0px;
   margin-bottom: .5em;
   flex: none;
+  align-self: center;
 `;
 
-Title.propTypes = {
-  children: PropTypes.string,
-}
 
 export default Title;

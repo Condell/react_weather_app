@@ -15,11 +15,12 @@ const HomeWrapper = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
+  text-align: center;
 `;
 
 const Home = () =>
   <HomeWrapper>
-    <Title whiteFont>Enter a City and State</Title>
+    <Title whiteFont>Enter a City and State, or a ZIP Code</Title>
     <WeatherContainer />
   </HomeWrapper>;
 
