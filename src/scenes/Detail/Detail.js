@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import WeatherIcon from "../../components/WeatherIcon/WeatherIcon"
+import WeatherIcon from "../../components/WeatherIcon/WeatherIcon";
 
 const DetailWrapper = styled.div`
   font-family: 'Abel', sans-serif;
@@ -10,7 +10,8 @@ const DetailWrapper = styled.div`
 
 const Detail = (props, match) =>
   <DetailWrapper>
-    <WeatherIcon large
+    <WeatherIcon
+      large
       src={`http://openweathermap.org/img/w/${props.location.state.weather[0]
         .icon}.png`}
       alt={`${props.location.state.weather[0].description} icon`}
@@ -25,13 +26,16 @@ const Detail = (props, match) =>
       Forecast: {props.location.state.weather[0].description}
     </h2>
     <h2>
-      Minimum Temperature: {Math.round(props.location.state.temp.min)} °F
+      Low Temperature: {Math.round(props.location.state.temp.min)} °F
     </h2>
     <h2>
-      Maximum Temperature: {Math.round(props.location.state.temp.max)} °F
+      High Temperature: {Math.round(props.location.state.temp.max)} °F
     </h2>
     <h2>
-      Humidity: {props.location.state.humidity}
+      Humidity:{" "}
+      {props.location.state.humidity === 0
+        ? "Unlisted"
+        : props.location.state.humidity}
     </h2>
   </DetailWrapper>;
 
