@@ -7,7 +7,9 @@ import Title from "../../components/Title/Title";
 
 const HomeWrapper = styled.div`
   background-image: url(${pattern});
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #fe9c42;
   min-height: 80vh;
   display: flex;
@@ -25,3 +27,4 @@ const Home = () =>
   </HomeWrapper>;
 
 export default Home;
+
